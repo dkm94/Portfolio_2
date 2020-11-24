@@ -2,3 +2,9 @@
   #root, .App {
     height: 100%;
   }
+
+  .center-x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

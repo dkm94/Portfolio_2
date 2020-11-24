@@ -1,0 +1,17 @@
+h3 {
+    font-size: 1rem;
+}
+
+.technos > ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.technos > ul > li {
+    list-style: none;
+}
+
+.techno-list > img {
+    height: 64px;
+}

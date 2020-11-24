@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  background: rgb(12, 12, 12);
+  /* background: rgb(12, 12, 12); */
 }
 
 body > #root > div {

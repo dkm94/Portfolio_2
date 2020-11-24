@@ -1,43 +1,66 @@
-import React, { useState } from 'react';
-import Tab_langages from "./Tableau_langages/tableau";
-import Tab_stack from "./Tableau_stack/tableau";
-import Tab_outils from "./Tableau_outils/tableau";
-import Langagues from "./Tableau_langages/Languages";
-import Stack from "./Tableau_stack/Stack";
-import Tools from "./Tableau_outils/Tools";
+import React, { useState, useEffect } from 'react';
+import "./Technos.css";
+import Languages from "./Components_Technos/Languages";
+import Stack from "./Components_Technos/Stack";
+import Tools from "./Components_Technos/Tools";
 import PropTypes from "prop-types";
-import axios from "axios";
-
 
 const Technos = () => {
 
-    // const [languages, setLanguages] = useState([])
-    // const [stacks, setStack] = useState([])
-    // const [tools, setTools] = useState([])
-    // console.log(Tab_langages)
-    // console.log(Tab_stack)
-    // console.log(Tab_outils)
+    const [languages, setLanguages] = useState([])
+    const [stacks, setStack] = useState([])
+    const [tools, setTools] = useState([])
+    
+    useEffect(() => {
+        fetch("../data/tableau_langages.json")
+        .then(res => res.json())
+        .then(data => {
+            setLanguages(data)
+        })
+        .catch((err) => 
+            console.log(err)
+        )
+    }, [])
 
-    axios.get("./Tableau_langages/tableau.js")
-        .then((res) => {
-            res.json()
-            console.log(res)
+    useEffect(() => {
+        fetch("../data/tableau_stack.json")
+        .then(res => res.json())
+        .then(data => {
+            setStack(data)
         })
-        .then((data) => {
-            console.log(data)
-        })
+        .catch((err) => 
+            console.log(err)
+        )
+    }, [])
+
+    useEffect(() => {
+        fetch("../data/tableau_outils.json")
+            .then(res => res.json())
+            .then(data => {
+                setTools(data)
+            })
+            .catch((err) => console.log(err))
+    })
 
     return (
-        <div onClick={test}>
-            {/* {languages.map((language, i) => {
-                return <Langagues key={i} language={language}/>
-            })}
-            {stacks.map((stack, i) => {
-                return <Stack key={i} stack={stack}/>
-            })}
-            {tools.map((tool, i) => {
-                return <Tools key={i} tool={tool}/>
-            })} */}
+        <div className="technos">
+
+            <ul>
+                {languages.map((language, i) => {
+                    return <Languages key={i} language={language}/>
+                })}
+            </ul>
+            <ul>
+                {stacks.map((stack, i) => {
+                    return <Stack key={i} stack={stack}/>
+                })}
+            </ul>
+            <ul>
+                {tools.map((tool, i) => {
+                    return <Tools key={i} tool={tool}/>
+                })}
+            </ul>
+
         </div>
     )
 }
@@ -48,8 +71,8 @@ Technos.propTypes = {
     tools: PropTypes.array
 }
 
-const test = () => {
-    alert('Test')
-}
+// const test = () => {
+//     alert('Test')
+// }
 
 export default (Technos)

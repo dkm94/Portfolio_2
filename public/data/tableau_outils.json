@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Bootstrap4",
+        "logo": "./Technos_logos/bootstrap.png"
+    },
+    {
+        "id": 2,
+        "name": "Postman",
+        "logo": "./Technos_logos/postman.png"
+    },
+    {
+        "id": 3,
+        "name": "Robo3T",
+        "logo": "./Technos_logos/robo3t.png"
+    },
+    {
+        "id": 4,
+        "name": "Github/GIT",
+        "logo": "./Technos_logos/github.png"
+    }
+]

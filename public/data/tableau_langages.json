@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "HTML5",
+        "logo": "./Technos_logos/html5.png"
+    },
+    {
+        "id": 2,
+        "name": "CSS3",
+        "logo": "./Technos_logos/css.png"
+    },
+    {
+        "id": 3,
+        "name": "Javascript",
+        "logo": "./Technos_logos/javascript.png"
+    },
+    {
+        "id": 4,
+        "name": "JQuery",
+        "logo": "./Technos_logos/jquery.png"
+    },
+    {
+        "id": 5,
+        "name": "NoSQL",
+        "logo": "./Technos_logos/nosql.png"
+    }
+]

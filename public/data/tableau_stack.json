@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "MongoDB",
+        "logo": "./Technos_logos/mongodb.png"
+    },
+    {
+        "id": 2,
+        "name": "ExpressJS",
+        "logo": "./Technos_logos/Expressjs.png"
+    },
+    {
+        "id": 3,
+        "name": "ReactJS",
+        "logo": "./Technos_logos/react.png"
+    },
+    {
+        "id": 4,
+        "name": "NodeJS",
+        "logo": "./Technos_logos/node-js.png"
+    }
+]
