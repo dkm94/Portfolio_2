@@ -6,7 +6,7 @@ import Introduction from "../Présentation/Présentation";
 import Technos from "../Technos/Technos";
 import Projets from "../Projets/Projets";
 
-export default function Portfolio_Container() {
+const Portfolio_Container = () => {
 
     // const [visible, setVisible] = useState(true);
     // const style = {
@@ -43,3 +43,5 @@ export default function Portfolio_Container() {
         </div>
     )
 }
+
+export default Portfolio_Container
