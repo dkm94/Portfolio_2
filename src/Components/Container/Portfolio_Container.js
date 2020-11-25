@@ -30,13 +30,13 @@ export default function Portfolio_Container() {
                 <Introduction />
             </div>
             <div className="grid-item item3" >
-                <Projets />
+                <Technos />
             </div>  
             <div className="grid-item item4 center-x " >
                 <CarteDeVisite />
             </div>
             <div className="grid-item item5 center-x">
-                <Technos />
+                <Projets />
             </div>
             <div className="grid-item item6" >6</div>
             <div className="grid-item item7" >7</div>
