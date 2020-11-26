@@ -55,7 +55,9 @@ letter-spacing: 3px;
 }
 
 .head {
-font-size: 30px;
+/* font-size: 30px; */
+font-size: 2rem;
+font-weight: bold;
 line-height: 40px;
 transform: translateY(40px);
 transition: all 0.7s;
@@ -63,9 +65,8 @@ transition: all 0.7s;
 
 
 .price {
-font-size: 22px;
+/* font-size: 22px; */
 line-height: 10px;
-font-weight: bold;
 opacity: 0;
 transform: translateY(40px);
 transition: all 0.7s;
@@ -111,4 +112,8 @@ opacity: 1;
 transform: translateY(0px);
 transition-delay: 0.6s;
 opacity: 1;
+}
+
+.carousel-btns {
+    font-size: 1rem;
 }

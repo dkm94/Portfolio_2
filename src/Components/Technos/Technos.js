@@ -13,13 +13,13 @@ const Technos = () => {
     
     useEffect(() => {
         fetch("../data/tableau_langages.json")
-        .then(res => res.json())
-        .then(data => {
-            setLanguages(data)
-        })
-        .catch((err) => 
-            console.log(err)
-        )
+            .then(res => res.json())
+            .then(data => {
+                setLanguages(data)
+            })
+            .catch((err) => 
+                console.log(err)
+            )
     }, [])
 
     useEffect(() => {
