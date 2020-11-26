@@ -2,6 +2,7 @@ const data = {
     "projets": [
         {
             "id": 1,
+            "index": 0,
             "img": "./Projets/kimia-thumbnail.png",
             "status": "Terminé",
             "titre": "Kimia",
@@ -11,6 +12,7 @@ const data = {
         },
         {
             "id": 2,
+            "index": 1,
             "img": "./Projets/screenshot-nutrifruits.png",
             "status": "Terminé",
             "titre": "Nutrifruits",
@@ -20,6 +22,7 @@ const data = {
         },
         {
             "id": 3,
+            "index": 2,
             "img": "./Projets/mjd-thumbnail.png",
             "status": "En développement",
             "titre": "MyJuniorDeveloper",
@@ -29,12 +32,15 @@ const data = {
         },
         {
             "id": 4,
+            "index": 3,
             "img": "./Projets/my-wedding-thumbnail.png",
             "status": "Terminé",
             "titre": "My Wedding App (API)",
-            "legende": "C'est le backend complet de la future application MyWeddingApp. Il s'agit d'une application d'organisation de mariage: les mariés peuvent créer leur compte, et planifier les détails clés de la cérémonie tels que l'ajout d'invités, d'un menu, le placement sur les tables...Les invités peuvent de leur côté compléter leur profil et chosir leurs préférences pour le choix du menu (ce qui permet aux mariés d'avoir une idée précise des quantités à commander), ajouter une photo de profil (pour permettre l'identifiation visuelle pour les autres invités sur les tables). L'application REACT est en contruction.",
+            "legende": "Application d'organisation de mariage: les mariés peuvent créer leur compte, et planifier les détails clés de la cérémonie tels que l'ajout d'invités, d'un menu, le placement sur les tables...Les invités peuvent de leur côté compléter leur profil et chosir leurs préférences pour le choix du menu (ce qui permet aux mariés d'avoir une idée précise des quantités à commander), ajouter une photo de profil (pour permettre l'identifiation visuelle pour les autres invités sur les tables)",
             "website": "",
             "github": "https://github.com/dkm94/keroku_mariage/tree/dev"
         }
     ]
 }
+
+export default data;

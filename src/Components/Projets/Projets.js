@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./Projets.css";
-import Container from "./Projet_container";
+import Card from "./Card/Card";
 import data from "./data/tableau_projets";
 
 export default class Projets extends Component {
@@ -12,6 +12,7 @@ export default class Projets extends Component {
             projet: data.projets[0] //current project
         }
     }
+    
 
     //Pour faire apparaître/disparaîre la div
     // permet de toggle true/false
@@ -50,12 +51,14 @@ export default class Projets extends Component {
 
         return (
             <div className="projets">
-                <Container projet={projet}/>
-                <button onClick={this.toggleAppear}>Show/Hide: {`${appearProject}`}</button>
-                {/* On désactive le bouton Suivant si on est sur le dernier projet, donc longueur du tableau - 1 */}
-                <button onClick={this.nextProject} disabled={property.index === data.properties.length-1}>Suiv.</button>
-                {/* On désactive le bouton Précédent si on est sur l'index 0 donc le 1er projet */}
-                <button onClick={this.prevProject} disabled={property.index === 0}>Préc.</button>
+                <Card projet={projet} prev={this.prevProject} next={this.nextProject}/>
+                <div className="carousel-btns">
+                    <button onClick={this.toggleAppear}>Show/Hide: {`${appearProject}`}</button>
+                    {/* On désactive le bouton Précédent si on est sur l'index 0 donc le 1er projet */}
+                    <button onClick={this.prevProject} disabled={projet.index === 0}>Préc.</button>
+                    {/* On désactive le bouton Suivant si on est sur le dernier projet, donc longueur du tableau - 1 */}
+                    <button onClick={this.nextProject} disabled={projet.index === data.projets.length-1}>Suiv.</button>
+                </div>
             </div>
         )
     }
