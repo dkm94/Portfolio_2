@@ -9,6 +9,7 @@ import Projets from "../Projets/Projets";
 // import FlippedProjects from "../Projets/Flipped";
 import SoftSkills from "../Soft_skills/Soft_skills";
 import Certifications from "../Certifications/Certifications";
+import Contact from "../Contact/Contact";
 // import FadeIn from "react-fade-in";
 
 
@@ -61,10 +62,13 @@ const Portfolio_Container = () => {
                 <Technos />
             </div>
             <div className="grid-item item6 center-x" >
-                <SoftSkills />
+                <Certifications />
             </div>
             <div className="grid-item item7 center-x" >
-                <Certifications />
+                <SoftSkills />
+            </div>
+            <div className="grid-item item8 center-x" >
+                <Contact />
             </div>
         </div>
         

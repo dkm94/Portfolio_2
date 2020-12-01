@@ -1,6 +1,6 @@
-.portfolio-container {
-    height: 100%;
-}
+/* .portfolio-container {
+
+} */
 
 .portfolio-container .grid-item {
     filter:blur(3px);
@@ -18,10 +18,18 @@
 
 .grid-container {
     display: grid;
+    grid-template-areas: 
+    'photo photo photo intro intro projet projet projet projet'
+    'photo photo photo intro intro projet projet projet projet'
+    'photo photo photo technos technos projet projet projet projet'
+    'photo photo photo technos technos certification certification skills skills'
+    'titre titre titre technos technos certification certification contact contact';
+    width: 100vw;
+    height: 100vh;
     grid-gap: 15px;
     /* background-color: #000000; */
     padding: 10px;
-    grid-template-columns: 350px 1fr 2fr;
+    /* grid-template-columns: 350px 1fr 2fr; */
 }
 
 .grid-item {
@@ -35,13 +43,14 @@
 }
 
 .item1 {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 3;
+    /* grid-column: 1 / span 2;
+    grid-row: 1 / span 3; */
     /* justify-content: center;
     align-items: center;
     object-fit: cover;
     height: 100%;
     width: 100%; */
+    grid-area: photo;
     padding: 0;
 }
 
@@ -52,34 +61,44 @@
 }
 
 .item2 {
-    grid-column: 3;
-    grid-row: 1 / span 1;
+    /* grid-column: 3;
+    grid-row: 1 / span 1; */
+    grid-area: intro;
 }
 
 .item3 {
-    grid-column: 4 / span 4;
-    grid-row: 1 / span 2;
+    /* grid-column: 4 / span 4;
+    grid-row: 1 / span 2; */
+    grid-area: projet;
 }
 
 .item4 {
-    grid-column: 1 / span 2;
-    grid-row: 4 / span 2;
+    /* grid-column: 1 / span 2;
+    grid-row: 4 / span 2; */
+    grid-area: titre;
 }
 
 .item5 {
-    grid-column: 3;
-    grid-row: 2 / span 4;
+    /* grid-column: 3;
+    grid-row: 2 / span 4; */
+    grid-area: technos;
 }
 
 .item6 {
-    grid-column: 4 / span 2;
-    grid-row: 3 / span 3;
+    /* grid-column: 4 / span 2;
+    grid-row: 3 / span 3; */
+    grid-area: certification;
 }
 
 .item7 {
-    grid-column: 6 / span 2;
-    grid-row: 3 / span 3;
+    /* grid-column: 6 / span 2;
+    grid-row: 3 / span 3; */
+    grid-area: skills;
     text-align: start;
+}
+
+.item8 {
+    grid-area: contact;
 }
 
 .flip-card {
