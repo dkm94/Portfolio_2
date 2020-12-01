@@ -51,7 +51,6 @@ export default class Projets extends Component {
 
         return (
             <div className="projets">
-                <Card projet={projet} prev={this.prevProject} next={this.nextProject}/>
                 <div className="carousel-btns">
                     {/* <button onClick={this.toggleAppear}>Show/Hide: {`${appearProject}`}</button> */}
                     {/* On désactive le bouton Précédent si on est sur l'index 0 donc le 1er projet */}
@@ -59,6 +58,7 @@ export default class Projets extends Component {
                     {/* On désactive le bouton Suivant si on est sur le dernier projet, donc longueur du tableau - 1 */}
                     <button onClick={this.nextProject} disabled={projet.index === data.projets.length-1}>Suiv.</button>
                 </div>
+                <Card projet={projet} prev={this.prevProject} next={this.nextProject}/>
             </div>
         )
     }

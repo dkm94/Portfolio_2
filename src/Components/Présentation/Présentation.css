@@ -1,5 +1,6 @@
-
-
+.intro {
+    position: relative;
+}
 p {
     font-size: 0.8rem;
     font-family: 'Roboto', sans-serif;
