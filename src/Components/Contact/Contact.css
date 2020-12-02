@@ -10,3 +10,11 @@
 .contact-list > img {
     height: 1.5rem;
 }
+
+.contact-list:hover > a:hover {
+    transform:scale(1.2);
+    opacity:1;
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.55);
+    transition: all 0.3s linear;
+}
+
