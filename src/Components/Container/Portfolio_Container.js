@@ -10,6 +10,7 @@ import Projets from "../Projets/Projets";
 import SoftSkills from "../Soft_skills/Soft_skills";
 import Certifications from "../Certifications/Certifications";
 import Contact from "../Contact/Contact";
+// import FlippedTechnos from "../Technos/Flipped";
 // import FadeIn from "react-fade-in";
 
 
@@ -43,24 +44,29 @@ const Portfolio_Container = () => {
             <div className="grid-item item1">
                 <img alt="" src={photo}></img>
             </div>
-            {/* <div className="flip-card"> */}
-            <div className="grid-item item2 center-x" >
-                {/* <FlippedIntroduction /> */}
-                <Introduction />
-            </div>
-            {/* </div> */}
-            {/* <div className="flip-card"> */}
-            <div className="grid-item item3 center-x" >
-                {/* <FlippedProjects /> */}
-                <Projets />
-            </div>  
-            {/* </div> */}
+           
+                <div className="grid-item item2 center-x" >
+                    {/* <FlippedIntroduction /> */}
+                    <Introduction />
+                </div>
+          
+       
+                <div className="grid-item item3 center-x" >
+                    {/* <FlippedIntroduction /> */}
+                    <Projets />
+                </div>  
+       
             <div className="grid-item item4 center-x " >
                 <CarteDeVisite />
             </div>
-            <div className="grid-item item5 center-x">
-                <Technos />
-            </div>
+
+          
+                <div className="grid-item item5 center-x">
+                    {/* <FlippedTechnos /> */}
+                    <Technos />
+                </div>
+        
+
             <div className="grid-item item6 center-x" >
                 <Certifications />
             </div>

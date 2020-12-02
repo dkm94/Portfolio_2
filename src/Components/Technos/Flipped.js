@@ -1,12 +1,11 @@
 import React from "react";
-import "./Présentation.css";
-// import image from "../../img/Flipped_Cards/introduction.jpg"
+import "./Technos.css";
 
 const FlippedCDV = () => {
 
     return(
         <div className="flipped flip-card-front style">
-            <span>PRESENTATION</span>
+            <span>TECHNOS</span>
         </div>
     )
 }

@@ -15,3 +15,9 @@ h3 {
 .techno-list > img {
     height: 2rem;
 }
+
+.style {
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+}
