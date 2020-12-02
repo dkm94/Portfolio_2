@@ -1,7 +1,15 @@
+h2 {
+    text-align: end;
+    font-weight: 700;
+    font-size: 0.7rem;
+}
 
 p {
-    font-size: 0.8rem;
-    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
 }
 
 .style {

@@ -75,6 +75,10 @@ transition: all 0.7s;
 color: #b3b3b3;
 }
 
+.price .new {
+    line-height: 0.9rem;
+}
+
 .cart {
 display: flex;
 align-items: center;

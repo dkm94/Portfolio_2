@@ -4,13 +4,16 @@ import "./Soft_skills.css";
 const Soft_skills = () => {
 
         return(
-            <ul className="skills">
-                <li>Persévérance</li>
-                <li>Curiosité</li>
-                <li>Autonomie</li>
-                <li>Patience</li>
-                <li>Esprit d'entre-aide</li>
-            </ul>
+            <div className="skills">
+                <h2>Soft skills</h2>
+                <ul className="skills-list">
+                    <li>Persévérance</li>
+                    <li>Curiosité</li>
+                    <li>Autonomie</li>
+                    <li>Patience</li>
+                    <li>Esprit d'entre-aide</li>
+                </ul>
+            </div>
         )
 }
 

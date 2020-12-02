@@ -44,7 +44,7 @@ const Technos = () => {
 
     return (
         <div className="technos">
-
+            <h2>Technos</h2>
             <ul>
                 {languages.map((language, i) => {
                     return <Languages key={i} language={language}/>

@@ -1,17 +1,25 @@
-.certification {
+
+
+.certification-list {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: left;
     list-style: none;
     padding-left: 0;
+    margin: 0;
+    line-height: 2.5rem;
 }
 
-.certification > li {
+.certification-list > li {
     padding-bottom: 0px;
 }
 
-.certification > li > img {
-    height: 2.5rem;
+.certification-list > li > img {
+    height: 1.5rem;
+    margin-right: 5px;
 }
 
-.certification > li > span {
-    font-size: 1rem;
+.certification-list > li > span {
+    font-size: 0.9rem;
     padding-left: 5px;
 }

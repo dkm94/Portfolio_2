@@ -6,7 +6,7 @@ const CDV = () => {
     return(
         <div className="cdv">
             <h1>Diane Mpacko</h1>
-            <h2>Développeuse Web JS</h2>
+            <span>Développeuse Web JS</span>
         </div>
     )
 }

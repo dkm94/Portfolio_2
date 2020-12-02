@@ -2,6 +2,16 @@ h3 {
     font-size: 1rem;
 }
 
+.technos {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    height: 100%;
+}
+
 .technos > ul {
     display: flex;
     justify-content: space-between;

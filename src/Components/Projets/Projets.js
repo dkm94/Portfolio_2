@@ -51,6 +51,7 @@ export default class Projets extends Component {
 
         return (
             <div className="projets">
+                <h2>Projets</h2>
                 <div className="carousel-btns">
                     {/* <button onClick={this.toggleAppear}>Show/Hide: {`${appearProject}`}</button> */}
                     {/* On désactive le bouton Précédent si on est sur l'index 0 donc le 1er projet */}

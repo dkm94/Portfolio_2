@@ -15,11 +15,15 @@ const Certifications = () => {
     }, [])
 
     return(
-        <ul className="certification">
-            {certifications.map((certification, index) => {
-                return <Certification certification={certification} key={index}/>
-            })}
-        </ul>
+
+        <div className="certifications">
+            <h2>Certifications</h2>
+            <ul className="certification-list">
+                {certifications.map((certification, index) => {
+                    return <Certification certification={certification} key={index}/>
+                })}
+            </ul>
+        </div>
     )
 }
 
