@@ -10,6 +10,7 @@ const Technos = () => {
     const [languages, setLanguages] = useState([])
     const [stacks, setStack] = useState([])
     const [tools, setTools] = useState([])
+    const [visible, setVisible] = useState(true)
     
     useEffect(() => {
         fetch("../data/tableau_langages.json")
@@ -42,26 +43,57 @@ const Technos = () => {
             .catch((err) => console.log(err))
     })
 
-    return (
-        <div className="technos">
-            <h2>Technos</h2>
-            <ul>
-                {languages.map((language, i) => {
-                    return <Languages key={i} language={language}/>
-                })}
-            </ul>
-            <ul>
-                {stacks.map((stack, i) => {
-                    return <Stack key={i} stack={stack}/>
-                })}
-            </ul>
-            <ul>
-                {tools.map((tool, i) => {
-                    return <Tools key={i} tool={tool}/>
-                })}
-            </ul>
+    const showTitle = () => {
+        setVisible(!visible)
+    }
 
+        const show = {
+            position: "absolute",
+            height: "100%",
+            zIndex: "2000",
+            top: "0%",
+            width: "100%",
+            right: "0%",
+            backgroundColor: "#f3f3f3"
+        }
+
+        const hide = {
+            display: "none"
+        }
+
+        const full = {
+            width: "100%",
+            height: "100%"
+        }
+
+
+    return (
+        <div onMouseEnter={showTitle} onMouseLeave={showTitle} style={full}>
+            <div className="technos" style={{ position: "relative"}}>
+                <h2>Technos</h2>
+                
+                <ul>
+                    {languages.map((language, i) => {
+                        return <Languages key={i} language={language}/>
+                    })}
+                </ul>
+                <ul>
+                    {stacks.map((stack, i) => {
+                        return <Stack key={i} stack={stack}/>
+                    })}
+                </ul>
+                <ul>
+                    {tools.map((tool, i) => {
+                        return <Tools key={i} tool={tool}/>
+                    })}
+                </ul>
+                <div className="intro center-x" style={visible ? show : hide}>
+                    <span>TECHNOS</span>
+                </div>
+            </div>
         </div>
+
+       
     )
 }
 
@@ -70,9 +102,5 @@ Technos.propTypes = {
     stack: PropTypes.array,
     tools: PropTypes.array
 }
-
-// const test = () => {
-//     alert('Test')
-// }
 
 export default (Technos)

@@ -3,7 +3,7 @@
 } */
 
 .portfolio-container .grid-item {
-    filter:blur(3px);
+    /* filter:blur(3px); */
     opacity:.5;
     transform: scale(.98);
     box-shadow:none;
