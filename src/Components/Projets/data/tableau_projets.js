@@ -27,7 +27,7 @@ const data = {
             "status": "En développement",
             "titre": "MyJuniorDeveloper",
             "legende": "CVthèque dédiée aux développeurs Juniors. Il s'agit de mettre en avant ses compétences ainsi que ses projets sans tenir compte de l'expérience professionnelle qui leur fait souvent défaut.",
-            "website": "https://myjuniordeveloper.netlify.app/",
+            "website": "",//"https://myjuniordeveloper.netlify.app/",
             "github": "https://github.com/dkm94/MyJuniorDeveloper/tree/Dev"
         },
         {

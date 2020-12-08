@@ -2,8 +2,8 @@
 
 } */
 
-.portfolio-container .grid-item {
-    /* filter:blur(3px); */
+.grid-item {
+    filter:blur(3px);
     opacity:.5;
     transform: scale(.98);
     box-shadow:none;
@@ -52,6 +52,8 @@
     width: 100%; */
     grid-area: photo;
     padding: 0;
+    filter:blur(0px);
+    opacity:1;
 }
 
 .item1 > img {
@@ -64,6 +66,7 @@
     /* grid-column: 3;
     grid-row: 1 / span 1; */
     grid-area: intro;
+    
 }
 
 .item3 {
@@ -76,6 +79,8 @@
     /* grid-column: 1 / span 2;
     grid-row: 4 / span 2; */
     grid-area: titre;
+    filter:blur(0px);
+    opacity:1;
 }
 
 .item5 {

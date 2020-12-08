@@ -14,8 +14,7 @@ export default class Projets extends Component {
     }
 
     showTitle = () => {
-        this.setState(this.visible)
-        console.log(this.visible);
+        this.setState({ visible : !this.state.visible })
     }
 
     // Ctrl suivant
@@ -75,8 +74,8 @@ export default class Projets extends Component {
                         <button type="button" className="btn btn-outline-secondary" onClick={this.nextProject} disabled={projet.index === data.projets.length-1}>Suiv.</button>
                     </div>
                     <Card projet={projet} prev={this.prevProject} next={this.nextProject}/>
-                    <div className="intro center-x" style={visible ? show : hide}>
-                        <span>PROJETS</span>
+                    <div className="projets center-x" style={visible ? show : hide}>
+                        <span style={{ fontSize: "1.3rem" }}>PROJETS</span>
                     </div>
                 </div>
             </div>

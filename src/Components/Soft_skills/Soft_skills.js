@@ -29,7 +29,7 @@ const Soft_skills = () => {
         }
         return(
             <div onMouseEnter={showTitle} onMouseLeave={showTitle} style={full}>
-                <div className="skills center-x" style={{ position: "relative"}}>
+                <div className="skills" style={{ position: "relative"}}>
                     <h2>Soft skills</h2>
                     <ul className="skills-list">
                         <li>Persévérance</li>
@@ -39,7 +39,7 @@ const Soft_skills = () => {
                         <li>Esprit d'entre-aide</li>
                     </ul>
                     <div className="intro center-x" style={visible ? show : hide}>
-                        <span>SOFT SKILLS</span>
+                        <span style={{ fontSize: "1.3rem" }}>SOFT SKILLS</span>
                     </div>
                 </div>
             </div>

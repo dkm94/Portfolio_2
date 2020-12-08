@@ -88,7 +88,7 @@ const Technos = () => {
                     })}
                 </ul>
                 <div className="intro center-x" style={visible ? show : hide}>
-                    <span>TECHNOS</span>
+                    <span style={{ fontSize: "1.3rem" }}>TECHNOS</span>
                 </div>
             </div>
         </div>

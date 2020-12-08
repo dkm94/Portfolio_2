@@ -41,7 +41,7 @@ const Certifications = () => {
 
     return(
         <div onMouseEnter={showTitle} onMouseLeave={showTitle} style={full}>
-            <div className="certifications center-x" style={{ position: "relative"}}>
+            <div className="certifications" style={{ position: "relative"}}>
                 <h2>Certifications</h2>
                 <ul className="certification-list">
                     {certifications.map((certification, index) => {
@@ -49,7 +49,7 @@ const Certifications = () => {
                     })}
                 </ul>
                 <div className="intro center-x" style={visible ? show : hide}>
-                    <span>CERTIFICATIONS</span>
+                    <span style={{ fontSize: "1.3rem" }}>CERTIFICATIONS</span>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import "./Card.css";
 import PropTypes from "prop-types";
 
@@ -19,12 +20,12 @@ const Card = ({ projet }) => {
                     <p className="new">{legende}</p>
                 </div>
                 <div className="items cart">
-                    <button type="button" className="btn btn-light demo-btn slideshow-btn">
-                        <a href={website} target="_blank" rel="noopener noreferrer">Voir la démo</a>
-                    </button>
-                    <button type="button" className="btn btn-light slideshow-btn">
-                        <a href={github} target="_blank" rel="noopener noreferrer">Voir le code</a>
-                    </button>
+                    <Button type="button" href={website} target="_blank" className="btn btn-light demo-btn slideshow-btn" disabled={website === ""}>
+                    Voir la démo
+                    </Button>
+                    <Button type="button" href={github} target="_blank" className="btn btn-light slideshow-btn" >
+                    Voir le code
+                    </Button>
                 </div>
                     
                 </div>

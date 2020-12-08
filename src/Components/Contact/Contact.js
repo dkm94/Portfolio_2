@@ -47,7 +47,7 @@ const Contact = () => {
     return(
         <Router>
             <div onMouseEnter={showTitle} onMouseLeave={showTitle} style={full}>
-                <div className="contact center-x" style={{ position: "relative"}}>
+                <div className="contact" style={{ position: "relative"}}>
                     <h2>En savoir plus</h2>
                     <div className="contact-list">
                         <Link to={{ pathname: "https://www.linkedin.com/in/diane-mpk/"}}> <img src={LinkedIn} alt="LinkedIn"/></Link>
@@ -62,7 +62,7 @@ const Contact = () => {
                         <Link to="/Documents/CV_Dev_web_MPACKO_Diane.pdf" target="_blank" download ><img src={CV} alt="Télécharger mon CV"/></Link>
                     </div>
                     <div className="intro center-x" style={visible ? show : hide}>
-                        <span>CONTACT & CV</span>
+                        <span style={{ fontSize: "1.3rem" }}>CONTACT & CV</span>
                     </div>
                 </div>
             </div>
