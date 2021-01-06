@@ -38,7 +38,7 @@ const Soft_skills = () => {
                         <li>Patience</li>
                         <li>Esprit d'entre-aide</li>
                     </ul>
-                    <div className="intro center-x" style={visible ? show : hide}>
+                    <div className="intro center-x recto" style={visible ? show : hide}>
                         <span style={{ fontSize: "1.3rem" }}>SOFT SKILLS</span>
                     </div>
                 </div>

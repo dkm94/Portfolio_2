@@ -61,7 +61,7 @@ const Contact = () => {
                         </a>
                         <Link to="/Documents/CV_Dev_web_MPACKO_Diane.pdf" target="_blank" download ><img src={CV} alt="Télécharger mon CV"/></Link>
                     </div>
-                    <div className="intro center-x" style={visible ? show : hide}>
+                    <div className="intro center-x recto" style={visible ? show : hide}>
                         <span style={{ fontSize: "1.3rem" }}>CONTACT & CV</span>
                     </div>
                 </div>

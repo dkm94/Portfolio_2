@@ -1,3 +1,4 @@
+
 .grid-item {
     filter:blur(3px);
     opacity:.5;
@@ -153,7 +154,10 @@
         width: 100%;
         height: fit-content;
         grid-template-columns: auto auto;
+    }
 
+    .grid-item {
+        filter:blur(0px);
     }
   }
 
@@ -174,3 +178,4 @@
 
     }
   }
+  

@@ -48,7 +48,7 @@ const Certifications = () => {
                         return <Certification certification={certification} key={index}/>
                     })}
                 </ul>
-                <div className="intro center-x" style={visible ? show : hide}>
+                <div className="intro center-x recto" style={visible ? show : hide}>
                     <span style={{ fontSize: "1.3rem" }}>CERTIFICATIONS</span>
                 </div>
             </div>

@@ -87,7 +87,7 @@ const Technos = () => {
                         return <Tools key={i} tool={tool}/>
                     })}
                 </ul>
-                <div className="intro center-x" style={visible ? show : hide}>
+                <div className="intro center-x recto" style={visible ? show : hide}>
                     <span style={{ fontSize: "1.3rem" }}>TECHNOS</span>
                 </div>
             </div>
