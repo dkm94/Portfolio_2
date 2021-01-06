@@ -70,7 +70,7 @@ const Technos = () => {
     return (
         <div onMouseEnter={showTitle} onMouseLeave={showTitle} style={full}>
             <div className="technos" style={{ position: "relative"}}>
-                <h2>Technos</h2>
+                <h2>Hard skills</h2>
                 
                 <ul>
                     {languages.map((language, i) => {

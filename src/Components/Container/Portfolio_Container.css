@@ -1,7 +1,3 @@
-/* .portfolio-container {
-
-} */
-
 .grid-item {
     filter:blur(3px);
     opacity:.5;
@@ -31,7 +27,8 @@
     grid-gap: 5px;
     /* background-color: #000000; */
     padding: 10px;
-    grid-template-columns: 350px 1fr 2fr;
+    /* grid-template-columns: 350px 1fr 2fr; */
+    grid-template-columns: 15rem auto auto;
 }
 
 .grid-item {
@@ -43,13 +40,6 @@
 }
 
 .item1 {
-    /* grid-column: 1 / span 2;
-    grid-row: 1 / span 3; */
-    /* justify-content: center;
-    align-items: center;
-    object-fit: cover;
-    height: 100%;
-    width: 100%; */
     grid-area: photo;
     padding: 0;
     filter:blur(0px);
@@ -150,4 +140,37 @@
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
-  
+
+  @media only screen and (max-width: 1200px) {
+    .grid-container {
+        grid-template-areas: 
+        'titre titre'
+        'photo intro'
+        'skills skills'
+        'technos technos'
+        'projet projet'
+        'certification contact';
+        width: 100%;
+        height: fit-content;
+        grid-template-columns: auto auto;
+
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .grid-container {
+        grid-template-areas: 
+        'titre'
+        'photo'
+        'intro'
+        'skills'
+        'technos'
+        'projet'
+        'certification' 
+        'contact';
+        width: 100%;
+        height: fit-content;
+        grid-template-columns: auto;
+
+    }
+  }
