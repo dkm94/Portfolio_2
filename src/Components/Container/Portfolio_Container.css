@@ -29,12 +29,12 @@
     /* background-color: #000000; */
     padding: 10px;
     /* grid-template-columns: 350px 1fr 2fr; */
-    grid-template-columns: 15rem auto auto;
+    grid-template-columns: 10rem auto auto;
 }
 
 .grid-item {
     text-align: center;
-    padding: 10px;
+    padding: 0px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
     transition: all 0.3s linear;
     background-color: inherit;
@@ -61,34 +61,24 @@
 }
 
 .item3 {
-    /* grid-column: 4 / span 4;
-    grid-row: 1 / span 2; */
     grid-area: projet;
 }
 
 .item4 {
-    /* grid-column: 1 / span 2;
-    grid-row: 4 / span 2; */
     grid-area: titre;
     filter:blur(0px);
     opacity:1;
 }
 
 .item5 {
-    /* grid-column: 3;
-    grid-row: 2 / span 4; */
     grid-area: technos;
 }
 
 .item6 {
-    /* grid-column: 4 / span 2;
-    grid-row: 3 / span 3; */
     grid-area: certification;
 }
 
 .item7 {
-    /* grid-column: 6 / span 2;
-    grid-row: 3 / span 3; */
     grid-area: skills;
     text-align: start;
 }
@@ -175,7 +165,26 @@
         width: 100%;
         height: fit-content;
         grid-template-columns: auto;
-
     }
   }
+
+  @media only screen and (max-width: 480px) {
+    .grid-container {
+      padding: 0;
+    }
+
+    .grid-item {
+        box-shadow: none;
+        opacity: 1;
+      }
+    
+    .item4 {
+        height: 100vh;
+    }
+
+    .item1 {
+        display: none;
+    }
+  }
+  
   

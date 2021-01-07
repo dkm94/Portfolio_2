@@ -9,3 +9,27 @@ body > #root > div {
   height: 100%;
   /* background: rgb(228, 187, 230); */
 }
+
+
+@media only screen and (max-width: 1024px) {
+  .html {
+    height: fit-content;
+  }
+
+  .grid-container {
+      grid-template-areas: 
+      'titre titre'
+      'photo intro'
+      'skills skills'
+      'technos technos'
+      'projet projet'
+      'certification contact';
+      width: 100%;
+      height: fit-content;
+      grid-template-columns: auto auto;
+  }
+
+  .grid-item {
+      filter:blur(0px);
+  }
+}

@@ -13,4 +13,12 @@ span {
     font-size: 1rem;
 }
 
+@media only screen and (max-width: 1024px) {
+    .cdv > h1 {
+        font-size: 3rem
+    }
 
+    .grid-item {
+        filter:blur(0px);
+    }
+  }
