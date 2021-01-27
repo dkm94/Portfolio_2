@@ -66,7 +66,7 @@ export default class Projets extends Component {
         return (
             <div onMouseEnter={this.showTitle} onMouseLeave={this.showTitle} style={full}>
                 <div className="projets" style={{ position: "relative"}}>
-                    <h2>Projets</h2>
+                    {/* <h2>Projets</h2> */}
                     <div className="carousel-btns">
                         {/* On désactive le bouton Précédent si on est sur l'index 0 donc le 1er projet */}
                         <button type="button" className="btn btn-outline-secondary" onClick={this.prevProject} disabled={projet.index === 0}>Préc.</button>
@@ -74,9 +74,9 @@ export default class Projets extends Component {
                         <button type="button" className="btn btn-outline-secondary" onClick={this.nextProject} disabled={projet.index === data.projets.length-1}>Suiv.</button>
                     </div>
                     <Card projet={projet} prev={this.prevProject} next={this.nextProject}/>
-                    <div className="projets center-x recto" style={visible ? show : hide}>
+                    {/* <div className="projets center-x recto" style={visible ? show : hide}>
                         <span style={{ fontSize: "1.3rem" }}>PROJETS</span>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         )

@@ -8,6 +8,7 @@ import Projets from "../Projets/Projets";
 import SoftSkills from "../Soft_skills/Soft_skills";
 import Certifications from "../Certifications/Certifications";
 import Contact from "../Contact/Contact";
+// import Slideshow from  "../Projets/Slideshow";
 
 
 
@@ -21,7 +22,7 @@ const Portfolio_Container = () => {
             <div className="grid-item item2 center-x" >
                 <Introduction />
             </div>
-            <div className="grid-item item3 center-x" >
+            <div className="grid-item item3" >
                 <Projets />
             </div>  
             <div className="grid-item item4 center-x " >

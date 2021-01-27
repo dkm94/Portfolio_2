@@ -9,6 +9,75 @@
     margin-bottom: 5px;
 }
 
+/*****SLIDESHOW******/
+.projets_slider {
+    display: flex;
+    align-items: flex-start;
+}
+
+  .slidershow{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .middle{
+    width: 100%;
+    height: 100%;
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: #fff;
+  }
+  
+  input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+  
+  .slides{
+    display: flex;
+  }
+  
+  .slide{
+    width: 25%;
+    transition: 0.6s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -25%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -50%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -75%;
+  }
+  /* #r5:checked ~ .s1{
+    margin-left: -80%;
+  } */
+  
+
 @media only screen and (max-width: 480px) {
     .recto {
         display: none;
