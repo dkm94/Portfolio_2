@@ -1,12 +1,11 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import "./Card.css";
-import data from "../data/tableau_projets"
 import PropTypes from "prop-types";
 
 const Card = ({ projet, prev, next }) => {
     // On récupère les objets projets via props puis tous les attributs de l'objet
-    const { index, img, status, titre, legende, website, github } = projet;
+    const { img, status, titre, legende, website, github } = projet;
 
     return(
         <div className="slide-container" style={{ backgroundImage : `url(${img})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
