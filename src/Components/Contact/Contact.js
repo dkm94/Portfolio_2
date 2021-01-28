@@ -49,18 +49,18 @@ const Contact = () => {
             <div onMouseEnter={showTitle} onMouseLeave={showTitle} style={full}>
                 <div className="contact" style={{ position: "relative"}}>
                     <h2>En savoir plus</h2>
-                    <div className="contact-list">
-                        <Link to={{ pathname: "https://www.linkedin.com/in/diane-mpk/"}}> <img src={LinkedIn} alt="LinkedIn"/></Link>
-                        <Link to={{ pathname: "https://github.com/dkm94"}} target="_blank"><img src={Github} alt="Github"/></Link>
-                        <a
+                    <ul className="contact-list">
+                        <li><Link to={{ pathname: "https://www.linkedin.com/in/diane-mpk/"}}> <img src={LinkedIn} alt="LinkedIn"/></Link><span>Linkedin</span></li>
+                        <li><Link to={{ pathname: "https://github.com/dkm94"}} target="_blank"><img src={Github} alt="Github"/></Link><span>Github</span></li>
+                        <li><a
                         className="App-link"
                         href="mailto:diane.mpacko@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         ><img src={Gmail} alt="Gmail"/>
-                        </a>
-                        <Link to="/Documents/CV_Dev_web_MPACKO_Diane.pdf" target="_blank" download ><img src={CV} alt="Télécharger mon CV"/></Link>
-                    </div>
+                        </a><span>Gmail</span></li>
+                        <li><Link to="/Documents/CV_Dev_web_MPACKO_Diane.pdf" target="_blank" download ><img src={CV} alt="Télécharger mon CV"/></Link><span>CV</span></li>
+                    </ul>
                     <div className="intro center-x recto" style={visible ? show : hide}>
                         <span style={{ fontSize: "1.3rem" }}>CONTACT & CV</span>
                     </div>

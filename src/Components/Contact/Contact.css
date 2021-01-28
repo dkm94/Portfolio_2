@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    padding: 0px;
 }
 
 .contact-list > img {
@@ -22,6 +23,10 @@
     opacity:1;
     box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.55);
     transition: all 0.3s linear;
+}
+
+.contact > ul > li {
+    list-style: none;
 }
 
 @media only screen and (max-width: 480px) {

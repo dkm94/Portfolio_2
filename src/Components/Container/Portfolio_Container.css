@@ -22,18 +22,16 @@
 .grid-container {
     display: grid;
     grid-template-areas: 
-    'photo photo photo intro intro projet projet projet projet'
-    'photo photo photo intro intro projet projet projet projet'
-    'photo photo photo intro intro projet projet projet projet'
-    'photo photo photo technos technos certification certification skills skills'
-    'titre titre titre technos technos certification certification contact contact';
-    width: 100vw;
-    height: 100vh;
+    'photo intro projet'
+    'photo technos skills'
+    'titre contact certification';
+    /* width: 100vw; */
+    /* height: 100vh; */
     grid-gap: 5px;
     /* background-color: #000000; */
     padding: 10px;
-    /* grid-template-columns: 350px 1fr 2fr; */
-    grid-template-columns: 10rem auto auto;
+    grid-template-columns: 1fr 1fr 2fr;
+    /* grid-template-columns: 20rem auto auto; */
 }
 
 .grid-item {

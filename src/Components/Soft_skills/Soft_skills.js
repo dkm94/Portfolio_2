@@ -30,16 +30,14 @@ const Soft_skills = () => {
         return(
             <div onMouseEnter={showTitle} onMouseLeave={showTitle} style={full}>
                 <div className="skills" style={{ position: "relative"}}>
-                    <h2>Soft skills</h2>
-                    <ul className="skills-list">
-                        <li>Persévérance</li>
-                        <li>Curiosité</li>
-                        <li>Autonomie</li>
-                        <li>Patience</li>
-                        <li>Esprit d'entre-aide</li>
-                    </ul>
+                    <h2>Métier</h2>
+                    <div className="skills-list">
+                        <p>Je travaille aussi bien sur des projets frontend que backend en client REACT et backend SQL ou NoSQL.</p>
+                        <p>J'ai développé quelques projets en collaboration avec d'autres développeurs, mes projets personnels (client/serveur) sont en cours de développement.</p>
+                        <p>Je gère le projet en amont avec le client, en proposant des idées suivant ses prérequis, des maquettes, roadmap, charte graphique, user stories...le tout en agilité.</p>
+                    </div>
                     <div className="intro center-x recto" style={visible ? show : hide}>
-                        <span style={{ fontSize: "1.3rem" }}>SOFT SKILLS</span>
+                        <span style={{ fontSize: "1.3rem" }}>MÉTIER</span>
                     </div>
                 </div>
             </div>
