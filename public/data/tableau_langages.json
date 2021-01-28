@@ -23,5 +23,10 @@
         "id": 5,
         "name": "NoSQL",
         "logo": "./Technos_logos/nosql.png"
+    },
+    {
+        "id": 6,
+        "name": "SQL",
+        "logo": "./Technos_logos/sql.png"
     }
 ]

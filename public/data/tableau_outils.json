@@ -11,11 +11,6 @@
     },
     {
         "id": 3,
-        "name": "Robo3T",
-        "logo": "./Technos_logos/robo3t.png"
-    },
-    {
-        "id": 4,
         "name": "Github/GIT",
         "logo": "./Technos_logos/github.png"
     }

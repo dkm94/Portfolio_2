@@ -39,19 +39,19 @@ export default class Projets extends Component {
 
     render() {
 
-        // const show = {
-        //     position: "absolute",
-        //     height: "100%",
-        //     zIndex: "2000",
-        //     top: "0%",
-        //     width: "100%",
-        //     right: "0%",
-        //     backgroundColor: "#f3f3f3"
-        // }
+        const show = {
+            position: "absolute",
+            height: "100%",
+            zIndex: "2000",
+            top: "0%",
+            width: "100%",
+            right: "0%",
+            backgroundColor: "#f3f3f3"
+        }
 
-        // const hide = {
-        //     display: "none"
-        // }
+        const hide = {
+            display: "none"
+        }
 
         const full = {
             width: "100%",
@@ -61,7 +61,7 @@ export default class Projets extends Component {
         // Pour éviter les répétitions, on stocke les attributs dans this.state
         // C'est plus simple et plus clair pour faire passer les props
 
-        const { projet } = this.state;
+        const { projet, visible } = this.state;
 
         return (
             <div onMouseEnter={this.showTitle} onMouseLeave={this.showTitle} style={full}>

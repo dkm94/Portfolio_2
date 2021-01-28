@@ -6,16 +6,21 @@
     },
     {
         "id": 2,
+        "name": "Sequelize",
+        "logo": "./Technos_logos/sequelize.png"
+    },
+    {
+        "id": 3,
         "name": "ExpressJS",
         "logo": "./Technos_logos/Expressjs.png"
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "ReactJS",
         "logo": "./Technos_logos/react.png"
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "NodeJS",
         "logo": "./Technos_logos/node-js.png"
     }
