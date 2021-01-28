@@ -1,6 +1,7 @@
 .slide-container {
     height: 20rem;
-    width: 35rem;
+    /* width: 35rem; */
+    width: 100%;
 }
 
 .btn {
@@ -56,6 +57,7 @@ background: rgba(77, 77, 77, 0.9);
 color: #FEF5DF;
 opacity: 0;
 transition: all 0.5s;
+padding-right: 15px;
 }
 
 .items {

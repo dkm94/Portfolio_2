@@ -16,18 +16,17 @@ body > #root > div {
     height: fit-content;
   }
 
-  .grid-container {
+  /* .grid-container {
       grid-template-areas: 
       'titre titre'
       'photo intro'
-      'skills skills'
-      'technos technos'
+      'photo technos'
       'projet projet'
-      'certification contact';
+      'certification skills contact';
       width: 100%;
       height: fit-content;
       grid-template-columns: auto auto;
-  }
+  } */
 
   .grid-item {
       filter:blur(0px);

@@ -6,6 +6,10 @@
     box-shadow:none;
 }
 
+.recto > span {
+    font-family: 'Cinzel', serif;
+}
+
 .portfolio-container:hover .grid-item:hover {
     transform:scale(1);
     filter:blur(0px);
@@ -135,15 +139,15 @@
   @media only screen and (max-width: 1200px) {
     .grid-container {
         grid-template-areas: 
-        'titre titre'
-        'photo intro'
-        'skills skills'
-        'technos technos'
-        'projet projet'
-        'certification contact';
-        width: 100%;
-        height: fit-content;
-        grid-template-columns: auto auto;
+      'titre titre'
+      'photo intro'
+      'photo technos'
+      'projet projet'
+      'certification skills' 
+      'contact contact';
+      width: 100%;
+      height: fit-content;
+      grid-template-columns: auto auto;
     }
 
     .grid-item {
