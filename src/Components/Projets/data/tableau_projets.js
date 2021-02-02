@@ -27,7 +27,7 @@ const data = {
             "status": "En développement",
             "titre": "My Wedding App",
             "legende": "Application d'organisation de mariage: les mariés peuvent créer leur compte, et planifier les détails clés de la cérémonie tels que l'ajout d'invités, d'un menu, le placement sur les tables...Les invités peuvent de leur côté compléter leur profil et chosir leurs préférences pour le choix du menu (ce qui permet aux mariés d'avoir une idée précise des quantités à commander), ajouter une photo de profil (pour permettre l'identifiation visuelle pour les autres invités sur les tables)",
-            "website": "https://my-wedding-app.netlify.app/",
+            "website": "", //"https://my-wedding-app.netlify.app/",
             "github": "https://github.com/dkm94/front_mariage_app/tree/Developpement"
         },
         {
